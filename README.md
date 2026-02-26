@@ -1,0 +1,1 @@
+Website Warung Nasi Jaya Raya adalah sistem manajemen warung nasi yang menampilkan daftar menu dengan harga dan stok.Pengguna dapat membeli menu dan menyimpan menu favorit ke wishlist. Dilengkapi fitur dark mode dan statistik real-time.
