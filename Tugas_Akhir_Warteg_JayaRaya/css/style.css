@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+}
+
+#btn-theme {
+    margin-right: 10px;
+}
+
+/* Hero Section sudah pakai inline style di HTML */
+
+.card {
+    transition: 0.3s;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+footer {
+    margin-top: 50px;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-mode .card {
+    background-color: #2c2c2c;
+    color: #fff;
+    border: 1px solid #444;
+}
+
+body.dark-mode .modal-content {
+    background-color: #2c2c2c;
+    color: #fff;
+    border: 1px solid #444;
+}
+
+body.dark-mode .modal-header {
+    border-bottom: 1px solid #444;
+}
+
+body.dark-mode .modal-footer {
+    border-top: 1px solid #444;
+}
+
+body.dark-mode .list-group-item {
+    background-color: #333;
+    color: #fff;
+    border-color: #555;
+}
+
+body.dark-mode .btn-close {
+    filter: invert(1);
+}
+
+body.dark-mode .text-muted {
+    color: #999 !important;
+}
+
+/* Styling Card Body untuk Button */
+.card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body .btn:nth-of-type(1) {
+    width: calc(50% - 4px);
+    margin-right: 8px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.card-body .btn:nth-of-type(2) {
+    width: calc(50% - 4px);
+    margin-top: 10px;
+    display: inline-block;
+}
+
+/* Responsif untuk mobile */
+@media (max-width: 768px) {
+    .hero {
+        height: 300px !important;
+    }
+    
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+    
+    .card-body .btn:nth-of-type(1),
+    .card-body .btn:nth-of-type(2) {
+        width: 100%;
+        margin-right: 0;
+    }
+    
+    .card-body .btn:nth-of-type(1) {
+        margin-bottom: 8px;
+    }
+}
